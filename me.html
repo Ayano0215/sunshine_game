@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="zh-tw" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>羅美欣的個人介紹</title>
+<style type="text/css">
+/* 全域基本設定 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft JhengHei", sans-serif;
+    background-image: url('me_pic/個人介紹封面.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    /* 預設為黑底以襯托星空與背景圖 */
+    background-color: #0b0c10; 
+    
+    /* 進入淡入動畫 */
+    opacity: 0;
+    animation: fadeIn 1.5s forwards, moveBg 30s infinite alternate ease-in-out;
+}
+
+/* CSS 星星閃爍背景特效 */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    /* 運用漸層打造微小星星群 */
+    background-image: 
+        radial-gradient(1.5px 1.5px at 20px 30px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 160px 120px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 230px 220px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 290px 10px, #fff, rgba(0,0,0,0));
+    background-size: 350px 350px;
+    animation: twinkle 4s infinite ease-in-out;
+}
+
+/* 動畫定義 */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes moveBg {
+    from { background-position: center top; }
+    to { background-position: center bottom; }
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+/* 內容容器容器（確保在星星之上） */
+.main-container {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* 自介文字區優化 */
+.intro-text {
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+    font-weight: bold;
+}
+.intro-text span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* 按鈕表格樣式改進 */
+.nav-table {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 8vh;
+    border-spacing: 20px; /* 讓按鈕之間有漂亮的間距 */
+}
+
+.auto-style6 {
+    background-color: rgba(255, 255, 255, 0.15); /* 改為半透明玻璃質感 */
+    backdrop-filter: blur(5px); /* 磨砂玻璃效果 */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px; /* 圓角化更加現代 */
+    text-align: center;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.auto-style6:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* 滑過時變回亮白 */
+    transform: translateY(-5px); /* 微微浮起 */
+    box-shadow: 0 10px 20px rgba(255,255,255,0.2);
+}
+
+.auto-style5 {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.auto-style7 {
+    color: #FFFFFF; /* 預設改為白色配合半透明背景 */
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.auto-style6:hover .auto-style7 {
+    color: #000080; /* 滑過時字體變回原本的深藍色 */
+}
+
+/* 回家按鈕優化 */
+.auto-style4 {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-left: 20px;
+}
+
+.auto-style4:hover {
+    transform: scale(1.1) translateX(-5px); /* 往左微移更有回家的感覺 */
+    filter: brightness(1.3);
+    text-shadow: 0 0 15px rgba(255,255,255,1);
+}
+
+.auto-style1 {
+    color: #FFFFFF;
+    font-size: 28px;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <table style="width: 100%">
+        <tr>
+            <td class="intro-text">
+                <span>大家好，我是羅美欣，一位就讀台中科技大學多媒體系學生</span><br />
+                <span>喜歡唱歌、繪圖、寫各種抽象故事、玩遊戲</span><br />
+                <span style="color: #ffeb3b;">一個正在努力存活下去的設計生</span> </td>
+        </tr>
+    </table>
+
+    <table class="nav-table">
+        <tr>
+            <td class="auto-style6">
+                <a class="auto-style5" href="teams_pic/s1411322023%20羅美欣%20個人結案書.pdf">
+                    <strong><span class="auto-style7">個人結案報告書</span></strong>
+                </a>
+            </td>
+            <td class="auto-style6">
+                <a class="auto-style5" href="https://youtu.be/320RMKZl9rk">
+                    <strong><span class="auto-style7">個人影片</span></strong>
+                </a>
+            </td>
+            <td class="auto-style6">
+                <a class="auto-style5" href="teams_pic/s1411322023_海報_.png">
+                    <strong><span class="auto-style7">個人海報</span></strong>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <p>
+        <a class="auto-style4" href="index.htm">
+            <strong><span class="auto-style1">← 回家</span></strong>
+        </a>
+    </p>
+
+</div>
+
+</body>
+</html>
